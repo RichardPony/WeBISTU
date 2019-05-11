@@ -1,0 +1,33 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/my/my",
+    "pages/about/about",
+    "pages/score/score",
+    "pages/timetable/timetable"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#00BCD4",
+    "navigationBarTitleText": "WeBISTU",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar":{
+    "list":[
+      {
+        "pagePath":"pages/index/index",
+        "text":"首页",
+        "iconPath":"images/index/home.png",
+        "selectedIconPath":"images/index/home_active.png"
+      },
+      {
+        "pagePath":"pages/my/my",
+        "text":"个人中心",
+        "iconPath":"images/index/person.png",
+        "selectedIconPath":"images/index/person_active.png"
+      }
+    ]
+  }
+  
+}

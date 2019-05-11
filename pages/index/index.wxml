@@ -1,0 +1,42 @@
+<!--pages/logs/logs.wxml-->
+<swiper wx:if="{{!offline}}" style="" class="swiper" autoplay="true" interval="4000" duration="1000">
+  <block wx:for="{{notices}}" wx:key="{{index}}">
+    <swiper-item>
+      <image style="width:100%" bindtap="noticeTo" data-id='{{item.url}}' src="{{item.pic}}" class="slide-image" />
+    </swiper-item>
+  </block>
+</swiper>
+<!-- <view wx:if="{{!user_token}}" class='card'>
+  <text class='summary'>先绑定教务处才能获得信息哦~</text>
+</view>
+<view class='grade'>
+<view class='card' style='background:#00ff02'>
+  <text class='summary'>学号：{{user_token[0]}} GPA:{{score}}</text>
+</view>
+  <block wx:for="{{grade}}">
+    <view class='card'>
+      <text class="nav-subject" >{{item[0]}}</text>
+      <text class="nav-score">成绩：{{item[2]}} 绩点：{{item[1]}} 学分：{{item[3]}}</text>
+    </view> 
+  </block>
+</view> -->
+<!--pages/index/index.wxml-->
+<view class='container'>
+  <view class='card' style='margin-top:-30rpx;'>
+    <form bindsubmit="submit" report-submit="ture">
+      <view class='navs'>
+        <block wx:for="{{navs}}" wx:key="key">
+          <button data-key='{{item.key}}' class="form_button nav" form-type='submit' plain="{{plain}}">
+            <image class="nav-icon" src="/images/index/{{item.key}}.png"></image>
+            <text class="nav-desc text-caption">{{item.desc}}</text>
+          </button>
+        </block>
+      </view>
+    </form>
+  </view>
+</view>
+<view class='container'>
+  <view class='card' style='margin-top:30rpx'>
+    <text class="more">更多功能，敬请期待</text>
+  </view>
+</view>

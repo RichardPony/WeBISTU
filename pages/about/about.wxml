@@ -1,0 +1,19 @@
+<view class='container'>
+  <view class='fix'>
+    <view class='header'>
+    </view>
+    <view class="search">
+      <view card>
+        <view class='card-desc text-subtitle1' style='text-align:center'>致谢</view>
+        <text class='card-desc text-caption'>感谢小伙伴们的帮助和支持，希望能有更多同学指出我的问题。为了让大家尽快体验到小程序的方便，加快项目进度，WeBISTU在前端借鉴了开源小程序WeOUC的框架和逻辑结构，在此表示感谢，希望大家能够理解和支持。当然为了减少误会和麻烦，在小程序的更新中会加入更多原创元素，逐步减少直到不再使用其他同类小程序开源的结构。\n</text>
+        <text class='card-desc text-overline'>项目开源地址:https://github.com/RichardPony/WeBISTU/</text>
+        <view class='card-desc text-subtitle1' style='text-align:center'>更新说明</view>
+        <view class='layout-column layout-start'>
+          <text class='card-desc text-overline'>2019.03.15 初步实现常用功能:成绩查询</text>
+          <text class='card-desc text-overline'>2019.3.31 初步完成完成课表的重构</text>
+          <text class='card-desc text-overline'>2019.4.13 改善成绩的显示，增加登录失败提醒</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

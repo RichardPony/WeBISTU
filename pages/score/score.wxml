@@ -1,0 +1,16 @@
+<view wx:if="{{!user_token}}" class='card'>
+  <text class='summary'>先绑定教务处才能获得信息哦~</text>
+</view>
+<view class='grade'>
+<view class='card' style='background:#00bcd4'>
+  <text class='summary' decode="{{true}}" space="{{true}}">&nbsp;{{name}}&nbsp;&nbsp;&nbsp;{{major}}\n\n{{user_token[0]}}&nbsp;&nbsp;GPA:{{score}}</text>
+  <!-- <text class='summary' decode="{{true}}" space="{{true}}">学号：{{user_token[0]}}&nbsp;&nbsp;&nbsp;&nbsp; GPA:{{score}}</text> -->
+  
+</view>
+  <block wx:for="{{grade}}" wx:key="item">
+    <view class='card'>
+      <text class="nav-subject" >{{item[0]}}</text>
+      <text class="nav-score">成绩：{{item[2]}} 绩点：{{item[1]}} 学分：{{item[3]}}</text>
+    </view>
+  </block>
+</view>
