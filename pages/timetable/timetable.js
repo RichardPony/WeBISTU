@@ -97,13 +97,13 @@ Page({
     // console.log(Y + '年' + M + '月' + D + '日');
 
     var today = new Date();
-    var firstDay = new Date(2019, 0, 1);
+    var firstDay = new Date(2019, 6, 1);
     var dayOfWeek = firstDay.getDay();
     var spendDay = 1;
     if (dayOfWeek != 0) {
       spendDay = 7 - dayOfWeek + 1;
     }
-    firstDay = new Date(2019, 0, 1 + spendDay);
+    firstDay = new Date(2019, 6, 1 + spendDay);
     var d = Math.ceil((today.valueOf() - firstDay.valueOf()) / 86400000);
     var result = Math.ceil(d / 7);
     this.week = result - 7
@@ -210,9 +210,9 @@ Page({
         },
       ],
       [{
-        num: 1,
-        cls: []
-      },
+          num: 1,
+          cls: []
+        },
         {
           num: 2,
           cls: []
@@ -356,7 +356,7 @@ Page({
       } 
     }
 
-    var date = new Date(2019, 1, 25) // 获取每学期第一天;
+    var date = new Date(2019, 8, 2) // 获取每学期第一天;
     date = new Date(date.getTime() + 7 * 24 * 3600000 * (this.week - 1)) //获取到某个周的第一天的日期
     this.month = date.getMonth() + 1
     this.headers = []

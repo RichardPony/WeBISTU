@@ -6,7 +6,7 @@
       </sc-button> -->
       <view class='text-caption layout-row layout-center'>
         <button class="" plain="true" size='mini' bindtap='update' style='background:#00acc1;color:white;border-color:#37ab7'>
-          2019春季学期
+          2019秋季学期
         </button>
       </view>
       <picker value="{{week}}" range="{{weeks}}" bindchange='changeweek' wx:if="{{week}}">
